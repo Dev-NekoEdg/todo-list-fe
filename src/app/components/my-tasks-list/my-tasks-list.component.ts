@@ -11,7 +11,7 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class MyTasksListComponent {
 
-  constructor(public auth: AuthService) {
+  // constructor(public auth: AuthService) {
 
-  }
+  //}
 }

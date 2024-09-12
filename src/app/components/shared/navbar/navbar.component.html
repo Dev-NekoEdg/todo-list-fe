@@ -20,18 +20,7 @@
       <!-- *ngIf="(auth.isAuthenticated$ | async) === false" -->
       <!-- *ngIf="(auth.isAuthenticated$ | async) === true" -->
       <div class="d-flex" role="search">
-        <input class="btn btn-outline-success"
-        *ngIf="(authService.isAuthenticated$ | async) === false"
-              type="button"
-              (click)="login()"
-              value="Login">
 
-              <input class="btn btn-danger-success"
-              *ngIf="(authService.isAuthenticated$ | async)"
-              type="button"
-              (click)="logout()"
-              value="Logout"
-              >
       </div>
     </div>
   </div>

@@ -1,11 +1,27 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { AuthModule, AuthService } from '@auth0/auth0-angular';
+import { NgModule } from '@angular/core';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 describe('AppComponent', () => {
+  let fixture: ComponentFixture<AppComponent>;
+  let component: AppComponent;
+
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports:[AppComponent, RouterModule.forRoot([]),]
     }).compileComponents();
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+
+  });
+
+  it('renders without errors', () => {
+    expect(component).toBeTruthy();
   });
 
   // it('should create the app', () => {

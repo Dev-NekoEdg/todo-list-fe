@@ -12,17 +12,15 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class NavbarComponent {
 
-  constructor(public authService: AuthService ){
-
-  }
+  // constructor(public authService: AuthService ){}
 
 
-  login():void{
-    this.authService.loginWithRedirect();
-  }
-  logout():void{
-    this.authService.logout({
-      logoutParams: { returnTo: document.location.origin }
-    });
-  }
+  // login():void{
+  //   this.authService.loginWithRedirect();
+  // }
+  // logout():void{
+  //   this.authService.logout({
+  //     logoutParams: { returnTo: document.location.origin }
+  //   });
+  // }
 }

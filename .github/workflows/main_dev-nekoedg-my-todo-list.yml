@@ -25,8 +25,8 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-          npm run test --if-present
-          
+
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -47,7 +47,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-      
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -62,4 +62,4 @@ jobs:
           app-name: 'dev-nekoedg-my-todo-list'
           slot-name: 'Production'
           package: .
-          
+

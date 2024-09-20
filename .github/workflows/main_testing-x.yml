@@ -66,5 +66,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'testing-x'
-          slot-name: 'Production'
+          publish-profile: $
           package: ./dist/todo-list-fe

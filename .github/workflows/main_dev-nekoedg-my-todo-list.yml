@@ -70,5 +70,5 @@ jobs:
         with:
           app-name: 'dev-nekoedg-my-todo-list'
           slot-name: 'Production'
-          package: .
+          package: ./dist/todo-list-fe
 

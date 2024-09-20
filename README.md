@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 https://stackoverflow.com/questions/53654341/angular-7-test-nullinjectorerror-no-provider-for-activatedroute
+
+
+https://www.youtube.com/watch?v=S4VqVCdAyAo

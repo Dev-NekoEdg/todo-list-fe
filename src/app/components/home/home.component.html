@@ -1,4 +1,18 @@
-<p>home works!</p>
-<h3>
-  testing testing
-</h3>
+<br>
+<div class="row">
+  <div class="col-md-4">
+    <input
+      class="btn btn-outline-danger"
+      (click)="restart()"
+      value="reiniciar"
+      [disabled]="!isValid()"
+    />
+  </div>
+  <div class="col-md-4">
+    <input class="btn btn-outline-primary" value="click me!" (click)="sum()" />
+  </div>
+</div>
+<div class="row">
+  <div class="class col-md-4">click: {{ counter() }}</div>
+</div>
+

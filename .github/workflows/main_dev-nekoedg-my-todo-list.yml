@@ -59,10 +59,6 @@ jobs:
 
       - name: Login to Azure
         uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_6D2B4B427CD142899763052187C8F8DC }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6C6775BC8D1B49488407CEEECF52419B }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6C6775BC8D1B49488407CEEECF52419B }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -70,5 +66,5 @@ jobs:
         with:
           app-name: 'dev-nekoedg-my-todo-list'
           slot-name: 'Production'
-          package: ./dist/todo-list-fe
+          package: ./dist/todo-list-fe/browser/
 
